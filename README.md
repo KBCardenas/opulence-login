@@ -14,7 +14,7 @@ Sigue estos pasos para clonar y ejecutar el proyecto localmente:
 
 1. **Clona el repositorio**:
    ```bash
-   git clone https://github.com/usuario/repositorio.git
+   git clone https://github.com/KBCardenas/opulence-login.git
    ```
 
 2. **Entra en la carpeta del proyecto**:
