@@ -1,0 +1,196 @@
+:root {
+  --negro: #000;
+  --blanco: #fff;
+  --amarillo: #ffd166;
+  --gris-oscuro: #333333;
+  --gris-claro: #cccccc;
+  --rosa: #ff6b6b;
+}
+
+/* Activacion de fuente */
+@font-face {
+  font-family: 'ravie';
+  src: url('../fonts/ravie.ttf') format('truetype');
+}
+
+body {
+  font-family: 'montserrat', sans-serif!important;
+  overflow-x: hidden;
+}
+
+.navbar-brand img {
+  width: 70px;
+}
+
+.navbar {
+  background-color: var(--gris-oscuro)!important;
+}
+
+.navbar-collapse a {
+  color: var(--blanco);
+}
+.navbar-collapse a:hover {
+  color: var(--amarillo);
+}
+
+.bi-list {
+  color: var(--amarillo);
+  font-size: 30px;
+}
+
+.bi-search, .bi-person-circle, .bi-cart-fill {
+  color: var(--amarillo);
+  font-size: 30px;
+}
+
+/* Caja de búsqueda */
+.search-box {
+  margin-top: 5rem;
+}
+
+.search-box .btn {
+  padding: 0.4rem 0.8rem;
+}
+
+.search-box input:focus {
+  outline: none;
+  box-shadow: 0 0 5px var(--amarillo); /* Añade un borde amarillo suave al hacer clic */
+  border: 1px solid var(--amarillo);  /* Cambia el borde a amarillo */
+}
+
+.i-opulence input:focus {
+  outline: none;
+  box-shadow: 0 0 5px var(--amarillo); /* Añade un borde amarillo suave al hacer clic */
+  border: 1px solid var(--amarillo);  /* Cambia el borde a amarillo */
+}
+
+#close-search i {
+  color: red; /* Cambia la "X" a rojo */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#close-search i:hover {
+  background-color: red;
+  color: var(--blanco); /* O un color rojo más oscuro al pasar el mouse */
+  font-weight: bold;
+}
+
+
+#close-search {
+  border: red;
+  padding: 0;
+}
+
+#close-search:hover {
+  border: none;
+  background-color: red;
+  color: var(--blanco);
+}
+
+#hero {
+  background-color: var(--gris-oscuro);
+    padding-top: 8rem;
+    padding-bottom: 5.1rem;
+    width: 100%;
+    margin: 0;
+}
+
+.logo-hero, .p-hero {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+.p-hero {
+  color: var(--blanco);
+  text-align: justify;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.text-center {
+  text-align: center; /* Asegura que las imágenes estén centradas en sus columnas */
+}
+
+.btn-hero {
+  padding: 3px 35px;
+  background-color: var(--amarillo);
+  color: var(--blanco);
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 28px;
+  letter-spacing: 1px;
+  /* position: absolute;
+  top: 75%;
+  left: 66%;*/
+}
+
+
+/* Estilos de Log in y Sing up */
+.btn-opu {
+  background-color: var(--gris-claro);
+}
+
+.btn-opu:hover {
+  background-color: var(--amarillo);
+}
+
+.title-login {
+  color: var(--blanco);
+}
+
+/* Categorias destacadas */ 
+#categoriad-1 {
+  background-image: url("https://thumbs.dreamstime.com/b/calzado-cl%C3%A1sico-de-cuero-instalado-en-el-exterior-sobre-una-plancha-madera-jard%C3%ADn-vista-horizontal-imagen-largo-un-masculino-252752658.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#categoriad-2 {
+  background-image: url("https://plus.unsplash.com/premium_photo-1682435561654-20d84cef00eb?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2hvZXN8ZW58MHx8MHx8fDA%3D");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#categoriad-3 {
+  background-image: url("https://previews.123rf.com/images/yommy8008/yommy80081601/yommy8008160100100/51522441-foto-horizontal-de-dos-zapatos-gastados-de-edad-muy-avanzada-con-la-superficie-da%C3%B1ada-y-cordones-de.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#categoriad-4 {
+  background-image: url("https://plus.unsplash.com/premium_photo-1663100769321-9eb8fe5a8e6b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHNob2VzfGVufDB8fDB8fHww");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.categorias {
+  height: 300px;
+  color: var(--blanco);
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+@media (max-width: 570px) {
+  #hero {
+    padding: 40px 30px;
+  }
+}
+
+
+
+
+
