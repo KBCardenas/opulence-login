@@ -1,0 +1,42 @@
+ENDPOINTS DE LA API
+
+1. **Registro de Usuario**
+   - **Método**: POST
+   - **URL**: http://localhost:3000/signup
+   - **Descripción**: Este endpoint permite registrar un nuevo usuario.
+   - **Cuerpo de la Solicitud (JSON)**:
+     ```json
+     {
+         "name": "Nombre del Usuario",
+         "emailOrPhone": "correo@example.com",
+         "username": "nombreUsuario",
+         "password": "contraseña123",
+         "confirmPassword": "contraseña123",
+         "address": "Dirección del Usuario",
+         "paymentInfo": "Información de Pago"
+     }
+     ```
+   - **Respuesta Exitosa**:
+     - Código: 200
+     - Mensaje: "Usuario registrado con éxito"
+   - **Respuesta de Error**:
+     - Código: 400
+     - Mensaje: "Las contraseñas no coinciden" o "Error al registrar el usuario: mensaje de error"
+
+2. **Inicio de Sesión de Usuario**
+   - **Método**: POST
+   - **URL**: http://localhost:3000/login
+   - **Descripción**: Este endpoint permite a un usuario iniciar sesión en su cuenta.
+   - **Cuerpo de la Solicitud (JSON)**:
+     ```json
+     {
+         "emailOrPhone": "correo@example.com",
+         "password": "contraseña123"
+     }
+     ```
+   - **Respuesta Exitosa**:
+     - Código: 200
+     - Mensaje: "Autenticación satisfactoria"
+   - **Respuesta de Error**:
+     - Código: 401
+     - Mensaje: "Usuario no encontrado" o "Contraseña incorrecta"
